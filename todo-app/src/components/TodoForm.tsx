@@ -2,7 +2,7 @@ import { useState } from "react"
 import type { Todo, TodoCommand } from "../types/Todo"
 
 interface TodoFormProps{
-    todo: Todo | null;
+    todo: Todo | null | undefined;
     onSave: (value: TodoCommand) => void;
 }
 
